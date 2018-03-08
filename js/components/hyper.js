@@ -326,25 +326,51 @@ var Header = exports.Header = function Header(_ref, _ref2) {
 		(0, _hyperapp.h)(
 			"div",
 			{ className: "container" },
-			(0, _hyperapp.h)("div", { className: "logo" })
+			(0, _hyperapp.h)("div", { className: "logo" }),
+			(0, _hyperapp.h)(
+				"div",
+				{ className: "hamburger" },
+				(0, _hyperapp.h)("div", null),
+				(0, _hyperapp.h)("div", null),
+				(0, _hyperapp.h)("div", null)
+			),
+			(0, _hyperapp.h)(
+				"nav",
+				null,
+				(0, _hyperapp.h)(
+					"a",
+					{ href: "#" },
+					"Menu"
+				),
+				(0, _hyperapp.h)(
+					"a",
+					{ href: "#" },
+					"Party Platters"
+				),
+				(0, _hyperapp.h)(
+					"a",
+					{ href: "#" },
+					"Locations"
+				),
+				(0, _hyperapp.h)(
+					"a",
+					{ href: "#" },
+					"Rewards"
+				),
+				(0, _hyperapp.h)(
+					"a",
+					{ href: "#" },
+					"Reservations"
+				),
+				(0, _hyperapp.h)(
+					"div",
+					{ className: "close" },
+					(0, _hyperapp.h)("i", { "class": "fas fa-times" })
+				)
+			)
 		)
 	);
 };
-/*<div className="hamburger">
-	<div />
-	<div />
-	<div />
-</div>
-<nav>
-	<a href="#">Menu</a>
-	<a href="#">Party Platters</a>
-	<a href="#">Locations</a>
-	<a href="#">Rewards</a>
-	<a href="#">Reservations</a>
-	<div className="close">
-		<i class="fas fa-times" />
-	</div>
-</nav>*/
 
 /***/ }),
 /* 16 */
