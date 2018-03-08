@@ -82,6 +82,7 @@ function App(_ref) {
     (0, _hyperapp.h)(_OurStory.OurStory, { state: state, actions: actions }),
     (0, _hyperapp.h)(_SpecialMenu.SpecialMenu, { state: state, actions: actions }),
     (0, _hyperapp.h)(_Quote.Quote, { state: state, actions: actions }),
+    (0, _hyperapp.h)(_Reviews.Reviews, { state: state, actions: actions }),
     (0, _hyperapp.h)(_PromotionsAndEvents.PromotionsAndEvents, { state: state, actions: actions }),
     (0, _hyperapp.h)(_Contact.Contact, { state: state, actions: actions }),
     (0, _hyperapp.h)(_Footer.Footer, { state: state, actions: actions })
@@ -89,7 +90,6 @@ function App(_ref) {
 }
 // <Header state={state} actions={actions}/>
 // <Button state={state} actions={actions}/>
-//<Reviews state={state} actions={actions}/>
 
 /***/ }),
 /* 11 */
