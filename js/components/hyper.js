@@ -440,28 +440,23 @@ var Header = exports.Header = function Header(_ref) {
 				{ className: state.menu },
 				(0, _hyperapp.h)(
 					"a",
-					{ href: "#" },
+					{ href: "#SpecialMenu" },
 					"Menu"
 				),
 				(0, _hyperapp.h)(
 					"a",
 					{ href: "#" },
-					"Party Platters"
-				),
-				(0, _hyperapp.h)(
-					"a",
-					{ href: "#" },
-					"Locations"
-				),
-				(0, _hyperapp.h)(
-					"a",
-					{ href: "#" },
-					"Rewards"
-				),
-				(0, _hyperapp.h)(
-					"a",
-					{ href: "#" },
 					"Reservations"
+				),
+				(0, _hyperapp.h)(
+					"a",
+					{ href: "#Reviews" },
+					"Reviews"
+				),
+				(0, _hyperapp.h)(
+					"a",
+					{ href: "#Contact" },
+					"Contact"
 				),
 				(0, _hyperapp.h)(
 					"div",
@@ -543,7 +538,7 @@ var OurStory = exports.OurStory = function OurStory(_ref) {
         (0, _hyperapp.h)(
           "div",
           { className: "col-md-6 second" },
-          (0, _hyperapp.h)("img", { src: "https://c.pxhere.com/photos/2b/6f/lamp_chop_meat_cutlet_prepared_restaurant_eating_dinner-714043.jpg!d" })
+          (0, _hyperapp.h)("img", { src: "/images/lambChop.jpg!d" })
         )
       )
     )
@@ -780,7 +775,7 @@ var Reviews = exports.Reviews = function Reviews(_ref) {
         (0, _hyperapp.h)(
           "div",
           { className: "col-md-6 second" },
-          (0, _hyperapp.h)("img", { src: "http://pngimg.com/uploads/chef/chef_PNG162.png?i=1" })
+          (0, _hyperapp.h)("img", { src: "/images/chef.png" })
         ),
         (0, _hyperapp.h)(
           "div",
@@ -1021,11 +1016,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 (0, _hyperapp.app)({
   state: _globalState.globalState,
-  actions: _actions.actions,
   view: function view(state, actions) {
     return (0, _hyperapp.h)(_App2.default, { state: state, actions: actions });
   },
   root: document.getElementById('app'),
+  actions: _actions.actions,
   events: {
     action: function action(state, actions, _ref) {
       var name = _ref.name,
