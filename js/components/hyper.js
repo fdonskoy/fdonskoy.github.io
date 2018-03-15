@@ -593,10 +593,10 @@ var PromotionsAndEvents = exports.PromotionsAndEvents = function PromotionsAndEv
       (0, _hyperapp.h)(
         "div",
         { className: "specialContainer" },
-        (0, _hyperapp.h)("div", { className: "box image1", "data-aos": "fade-down" }),
+        (0, _hyperapp.h)("div", { className: "box image1", "data-aos": "fade-right" }),
         (0, _hyperapp.h)(
           "div",
-          { className: "box event", "data-aos": "fade-down" },
+          { className: "box event", "data-aos": "fade-right" },
           (0, _hyperapp.h)(
             "div",
             { className: "eventTitle" },
@@ -629,7 +629,7 @@ var PromotionsAndEvents = exports.PromotionsAndEvents = function PromotionsAndEv
         ),
         (0, _hyperapp.h)(
           "div",
-          { className: "box event", "data-aos": "zoom-out-up" },
+          { className: "box event", "data-aos": "fade-right" },
           (0, _hyperapp.h)(
             "div",
             { className: "eventTitle" },
@@ -660,7 +660,7 @@ var PromotionsAndEvents = exports.PromotionsAndEvents = function PromotionsAndEv
             )
           )
         ),
-        (0, _hyperapp.h)("div", { className: "box image2", "data-aos": "zoom-out-up" })
+        (0, _hyperapp.h)("div", { className: "box image2", "data-aos": "fade-right" })
       )
     )
   );
