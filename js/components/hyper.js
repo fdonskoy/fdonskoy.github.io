@@ -113,9 +113,7 @@ function App(_ref) {
     (0, _hyperapp.h)(_Reviews.Reviews, { state: state, actions: actions }),
     (0, _hyperapp.h)(_PromotionsAndEvents.PromotionsAndEvents, { state: state, actions: actions }),
     (0, _hyperapp.h)(_Contact.Contact, { state: state, actions: actions }),
-    (0, _hyperapp.h)(_Footer.Footer, { state: state, actions: actions }),
-    '// ',
-    (0, _hyperapp.h)(_Reservations.Reservations, { state: state, actions: actions })
+    (0, _hyperapp.h)(_Footer.Footer, { state: state, actions: actions })
   );
 }
 // <Header state={state} actions={actions}/>
