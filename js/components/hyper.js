@@ -1072,29 +1072,31 @@ var _App2 = _interopRequireDefault(_App);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-(0, _hyperapp.app)({
-  state: _globalState.globalState,
-  view: function view(state, actions) {
-    return (0, _hyperapp.h)(_App2.default, { state: state, actions: actions });
-  },
-  root: document.getElementById('app'),
-  actions: _actions.actions,
-  events: {
-    action: function action(state, actions, _ref) {
-      var name = _ref.name,
-          data = _ref.data;
-
-      console.group("Action Info");
-      console.log("Name:", name);
-      console.log("Data:", data);
-      console.groupEnd();
+window.onload = function () {
+  (0, _hyperapp.app)({
+    state: _globalState.globalState,
+    view: function view(state, actions) {
+      return (0, _hyperapp.h)(_App2.default, { state: state, actions: actions });
     },
-    load: function load(state, actions) {
-      actions.intro();
-    }
-  },
-  mixins: [(0, _hyperappReduxDevtools2.default)()]
-});
+    root: document.getElementById('app'),
+    actions: _actions.actions,
+    events: {
+      action: function action(state, actions, _ref) {
+        var name = _ref.name,
+            data = _ref.data;
+
+        console.group("Action Info");
+        console.log("Name:", name);
+        console.log("Data:", data);
+        console.groupEnd();
+      },
+      load: function load(state, actions) {
+        actions.intro();
+      }
+    },
+    mixins: [(0, _hyperappReduxDevtools2.default)()]
+  });
+};
 
 /***/ })
 ],[23]);
